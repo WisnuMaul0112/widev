@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>widev</title>
     <style>
       #navbar {
@@ -32,11 +33,29 @@
           font-style: normal;
           font-weight: 500;
       }
-      #nama {
+      .nama {
         font-family: 'roboto';
         font-style: normal;
         font-weight: bold;
         color: #f2994a;
+      }
+      .nama span{
+        font-family: 'roboto';
+        font-style: normal;
+        font-weight: bold;
+        color: rgb(37, 37, 37);
+      }
+      #profile{
+        border-color: #f2994a;;
+        border-radius: 100%;
+        border-style: solid;
+      }
+      #about{
+        font-family: 'roboto';
+        font-style: normal;
+        font-weight: 200;
+        padding-left: 2rem;
+        padding-right: 2rem;
       }
       .jumbotron {
         padding-top: 8rem;
@@ -83,6 +102,7 @@
           font-family: 'roboto';
           font-weight: 500;
           color: #f2994a;
+          text-decoration: none;
       }
       section{
           padding-top: 5rem;
@@ -125,10 +145,10 @@
 
     <!--section1 start-->
     <section class="jumbotron text-center">
-      <img src="/aset/profile.JPG" alt="profile" class="rounded-circle border border-warning img-thumbnail mb-4" width="200" height="200" />
-      <h1 id="nama">WISU MAULANA</h1>
-      <p>I’am Front-End Developer and Electrical Technician</p>
-      <button class="ButtonCV"><a class="ButtonCV" href="#"> Download CV</a></button>
+      <img src="https://raw.githubusercontent.com/WisnuMaul0112/widev/main/aset/profile.jpg" alt="profile" id="profile" class="rounded-circle mb-4 p-2" width="200" height="200" />
+      <h1 class="nama"><span>Hi, I'am </span> WISNU MAULANA</h1>
+      <p id="about">I’am Front-End Developer and Electrical Technician</p>
+      <button class="ButtonCV"><a class="ButtonCV" href="./aset/CV Wisnu Maulana.pdf" target="_blank"> Download CV</a></button>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
@@ -141,14 +161,14 @@
 
     <!-- section2-->
     <section id="MyProjects">
-      <div class="container">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row text-center mb-5">
           <div class="col"><h1>My Projects</h1></div>
         </div>
         <div class="row text-center">
           <div class="col-md-4">
             <div class="card">
-              <img src="/aset/project1.JPG" class="card-img-top" alt="project1" />
+              <img src="https://raw.githubusercontent.com/WisnuMaul0112/widev/main/aset/project1.jpg" class="card-img-top" alt="project1" />
               <div class="card-body">
                 <p class="card-text">LPG gas leak detection system IoT based</p>
               </div>
@@ -156,7 +176,7 @@
           </div>
           <div class="col-md-4">
             <div class="card">
-              <img src="/aset/project3.JPG" class="card-img-top" alt="project3" />
+              <img src="https://raw.githubusercontent.com/WisnuMaul0112/widev/main/aset/project3.jpg" class="card-img-top" alt="project3" />
               <div class="card-body">
                 <p class="card-text">UCourse landing page UI design</p>
               </div>
@@ -164,7 +184,7 @@
           </div>
           <div class="col-md-4">
             <div class="card">
-              <img src="/aset/project2.JPG" class="card-img-top" alt="project2" />
+              <img src="https://raw.githubusercontent.com/WisnuMaul0112/widev/main/aset/project2.jpg" class="card-img-top" alt="project2" />
               <div class="card-body">
                 <p class="card-text">Mobile music streaming UI design</p>
               </div>
@@ -184,13 +204,13 @@
 
     <!-- section 3-->
     <section id="skill">
-      <div class="container">
+      <div class="container" data-aos="fade-right" data-aos-delay="100">
         <div class="row text-center mb-5">
           <div class="col"><h1>Skills And Tools That I Can Use</h1></div>
         </div>
         <div class="row text-center justify-content-md-around">
           <div class="col-md-2">
-            <img src="/aset/arduino.PNG" alt="arduino" class="mb-2"/>
+            <img src="https://raw.githubusercontent.com/WisnuMaul0112/widev/main/aset/arduino.png" alt="arduino" class="mb-2"/>
             <p>arduino</p>
           </div>
           <div class="col-md-2">
@@ -198,15 +218,15 @@
             <p>Computer <br>Networking</br> </p>
           </div>
           <div class="col-md-2">
-              <img src="/aset/HTML.PNG" alt="HTML" width="120" height="120" class="mb-3" />
+              <img src="https://raw.githubusercontent.com/WisnuMaul0112/widev/main/aset/HTML.png" alt="HTML" width="120" height="120" class="mb-3" />
               <p>HTML </p>
           </div>
           <div class="col-md-2">
-              <img src="/aset/CSS.PNG" alt="CSS" width="129" height="129" class="mb-2" />
+              <img src="https://raw.githubusercontent.com/WisnuMaul0112/widev/main/aset/CSS.png" alt="CSS" width="129" height="129" class="mb-2" />
               <p>CSS</p>
           </div>
           <div class="col-md-2">
-              <img src="/aset/JavaScript.PNG" alt="JavaScript"class="mb-2" />
+              <img src="https://raw.githubusercontent.com/WisnuMaul0112/widev/main/aset/JavaScript.png" alt="JavaScript"class="mb-2" />
               <p>JavaScript</p>
           </div>
         </div>
@@ -221,40 +241,41 @@
     </section>
     <!-- section 3 end-->
 
+    <!--section4-->
     <section id="contact">
-        <div class="container">
+        <div class="container" data-aos="fade-down" data-aos-delay="100">
             <div class="row text-center mb-2">
                 <div class="col"><h1>Contact</h1></div>
             </div>
             <div class="row justify-content-sm-between mb-5">
                 <div class="col-4">
-                    <form class="form">
-                        <div class="mb-3">
+                    <form action="mail.php" class="form" method="POST">
+                        <div class="mb-sm-3">
                           <label for="name" class="form-label">Name</label>
-                          <input type="text" class="form-control" id="name" aria-describedby="Name">
+                          <input type="text" name="name" class="form-control" id="name" aria-describedby="Name">
                         </div>
-                        <div class="mb-3">
+                        <div class="mb-sm-3">
                           <label for="Email" class="form-label">Email</label>
-                          <input type="Email" class="form-control" id="Email">
+                          <input type="Email" name="email" class="form-control" id="Email">
                         </div>
-                        <div class="mb-3">
+                        <div class="mb-sm-3">
                             <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message rows="3"></textarea>
+                            <textarea class="form-control" name="message" id="message rows="3"></textarea>
                           </div>
-                          <button class="submit"><a class="submit" href="#">Submit</a></button>
+                          <input class="submit" type="submit"></button>
                       </form>
-
                 </div>
-                <div class="col-md-4">
+                <div class="col-sm-5">
                     <p class="media"><span class="iconify" data-inline="false" data-icon="fluent:mail-20-filled" style="color: #f2994a; font-size: 48px;"></span> mwisnu543@gmail.com</p>
-                    <p class="media"><span class="iconify" data-inline="false" data-icon="ant-design:instagram-filled" style="color: #f2994a; font-size: 48px;"></span> mwisnu61</p>
-                    <p class="media"><span class="iconify" data-inline="false" data-icon="akar-icons:github-fill" style="color: #f2994a; font-size: 48px;"></span> WisnuMaul0112</p>
-                    <p class="media"><span class="iconify" data-inline="false" data-icon="bi:linkedin" style="color: #f2994a; font-size: 48px;"></span> Wisnu Maulana</p>
+                    <p><span class="iconify" data-inline="false" data-icon="ant-design:instagram-filled" style="color: #f2994a; font-size: 48px;"></span> <a href="https://www.instagram.com/mwisnu61/" class="media" target="_blank"> mwisnu61</a></p>
+                    <p><span class="iconify" data-inline="false" data-icon="akar-icons:github-fill" style="color: #f2994a; font-size: 48px;"></span> <a href="https://github.com/WisnuMaul0112" class="media" target="_blank"> WisnuMaul0112</a></p>
+                    <p><span class="iconify" data-inline="false" data-icon="bi:linkedin" style="color: #f2994a; font-size: 48px;"></span><a href="https://www.linkedin.com/in/wisnu-maulana-035bb71b6/" class="media" target="_blank"> Wisnu Maulana</a></p>
                 </div>
             </div>
         </div>
     </section>
-    <footer class="footer">
+    <!--section4 end-->
+    <footer class="footer fixed-bottom">
         <p>Made With <span> &hearts;</span> By Wisnu Maulana</p>
     </footer>
 
@@ -269,5 +290,9 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
